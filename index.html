@@ -40,28 +40,53 @@
         }
 
         .flex-container {
+            margin: 0 auto;
             max-width: 50%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
             align-content: space-around;
-            align-items: center;
+            /*align-items: center;*/
+        }
+
+        .header {
+            margin: 0 auto 28pt auto;
+            width: 50%;
+        }
+
+        .header-name {
+            font-family: 'Playfair Display', serif;
+            font-size: min(10vw, 36px);
+        }
+
+        .header-info {
+            font-family: 'Roboto', sans-serif;
+            font-size: min(5vw, 18px);
+            overflow: hidden;
+        }
+
+        .content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 90%;
         }
     </style>
 </head>
 <body>
-<section
-        style="position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 90%">
-    <div style="margin: 0 auto 28pt auto; width: 50%;">
-        <div style="font-family: 'Playfair Display', serif; font-size: min(10vw, 36px);">
+<section class="content">
+    <div class="header">
+        <div class="header-name">
             Filip Skubacz
         </div>
-        <div style="font-family: 'Roboto', sans-serif; font-size: min(5vw, 18px); overflow: hidden;">
+        <div class="header-info">
             20; Student at TUM
         </div>
     </div>
-    <div class="container flex-container" style="margin: 0 auto">
+    <div class="container flex-container">
         <a class="item" href="https://github.com/offdroid/" target="_blank" rel="noreferrer">
             <!-- Source https://github.com/simple-icons/simple-icons/blob/develop/icons/github.svg -->
             <svg width="128" height="128" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
