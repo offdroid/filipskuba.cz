@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" name="viewport">
     <title>Filip Skubacz</title>
     <meta name="Personal site">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto:wght@300;400&display=swap"
           rel="stylesheet">
     <style>
         body {
@@ -106,6 +106,19 @@
             }
         }
 
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 4px;
+            width: 100%;
+            color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-weight: 300;
+            font-size: 12px;
+            animation: fadein 5s;
+            user-select: none;
+        }
+
         @media (prefers-color-scheme: dark) {
             body {
                 background: #131313;
@@ -127,7 +140,10 @@
 
             ::selection {
                 background-color: #f44336;
-                /*color: black;*/
+            }
+
+            footer {
+                color: rgba(255, 255, 255, 0.4);
             }
         }
 
@@ -204,5 +220,11 @@
         </a>
     </div>
 </section>
+<footer>
+    all logos are property of their respective owners
+</footer>
+<script>
+    document.getElementById('mail').addEventListener('click', () => alert('See Github for email'))
+</script>
 </body>
 </html>
